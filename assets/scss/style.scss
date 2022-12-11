@@ -1,4 +1,4 @@
-@import 'mediaquery';
+@import 'mediaquery.scss';
 @import  'colors';
 @import 'fonts.scss';
 .welcomeSection{
@@ -19,7 +19,7 @@
         border-radius: 10px;
         padding: 60px;
         
-        @media (max-width:950px) {
+        @media (max-width:$largeMedium) {
           
             height: 100%;
             display: flex;
@@ -42,17 +42,17 @@
             font-size: 56px;
             font-weight: 400;
             font-family: 'ashgar_el-kharefregular';
-            @media (max-width:950px) {
+            @media (max-width:$largeMedium) {
                text-align: center;
                font-size: 32px;
             
         } 
     }
         .messageParagh{
-            font-family: 'mulishextralight';
+            // font-family: 'mulishextralight';
             font-size: 24px;
             font-weight: 400;
-            @media (max-width:950px) {
+            @media (max-width:$largeMedium) {
                 text-align: center;
                 font-size: 16px;
              
@@ -87,7 +87,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 5px;
+            padding: 15px;
         }
         input {
             width: 100%;
@@ -113,6 +113,7 @@
 body {
     @media (min-width:$medium) {
         background-image: url('https://s3-alpha-sig.figma.com/img/b34d/b360/1ea4fa941cbe4148b4f953d4f5b1c969?Expires=1671408000&Signature=WUDkTwKOW57y4S~3rb1vYIyyF8-nvkg8BMPth5znU1A~7foev90ejZThbl0AC-9ztyNWzwBcawik~UN00rzcMwq5jz7f6wJ9zxOrN4K~LWQuBFbORbMRjQrKFmL4LB9MTwJkUXwaG11koLVtyXGE4gmirNn0nNLsqd5Hrlkj7yusOC7qAa199KdXmfaJdHJDsQTc95ZVqntqaetg7vHSN0WmvuLNs9SFb3cIVOWbyV5gFcNrahymCLewWAIXv-opP2u0N~5UY2ggAS9IzmW6vIc2E7g4rbIP2vM0Gq1ky5y9YXY5IRD6KLtRD53-vqX~jL~VoKuOd1XivWfAPQNggw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
-        background-size: cover;      
+        background-size: 100%;
+        background-position: 100%;
     }
 }
