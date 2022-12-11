@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "ashgar_el-kharefregular";
+  src: url("/assets/fonts/webfontkit-20221208-102519/abdoullah_ashgar_el-kharef_regular-webfont.woff2") format("woff2"), url("/assets/fonts/webfontkit-20221208-102519/abdoullah_ashgar_el-kharef_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mulishextralight";
+  src: url("/assets/fonts/webfontkit-20221208-102519/mulish-variablefont_wght-webfont.woff2") format("woff2"), url("/assets/fonts/webfontkit-20221208-102519/mulish-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.welcomeSection {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcomeSection .wrapperContainer {
+  background-color: #F2EFF9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  border-radius: 10px;
+  padding: 60px;
+}
+@media (max-width: 950px) {
+  .welcomeSection .wrapperContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: none;
+    padding: 30px;
+    width: 100%;
+  }
+  .welcomeSection .wrapperContainer img {
+    width: 100%;
+  }
+}
+.welcomeSection .wrapperContainer .error {
+  color: red;
+}
+.welcomeSection .wrapperContainer .welcomeMessage .messageHeader {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: "ashgar_el-kharefregular";
+}
+@media (max-width: 950px) {
+  .welcomeSection .wrapperContainer .welcomeMessage .messageHeader {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+.welcomeSection .wrapperContainer .welcomeMessage .messageParagh {
+  font-family: "mulishextralight";
+  font-size: 24px;
+  font-weight: 400;
+}
+@media (max-width: 950px) {
+  .welcomeSection .wrapperContainer .welcomeMessage .messageParagh {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+.welcomeSection .wrapperContainer .startedBtn {
+  padding: 0px 50px;
+  gap: 12px;
+  color: white;
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+  box-shadow: 0px 6px 18px #9CADF2;
+  border-radius: 10px;
+}
+.welcomeSection .wrapperContainer .form-contrl {
+  margin: 10px 0;
+  display: flex;
+}
+.welcomeSection .wrapperContainer .form-contrl .formIcon {
+  height: 50px;
+  background: #FFFFFF;
+  border-top: 1px solid #DBE3FF;
+  border-left: 1px solid #DBE3FF;
+  border-bottom: 1px solid #DBE3FF;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.welcomeSection .wrapperContainer .form-contrl input {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #DBE3FF;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.welcomeSection .wrapperContainer .form-contrl input:focus {
+  outline: none;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url("https://s3-alpha-sig.figma.com/img/b34d/b360/1ea4fa941cbe4148b4f953d4f5b1c969?Expires=1671408000&Signature=WUDkTwKOW57y4S~3rb1vYIyyF8-nvkg8BMPth5znU1A~7foev90ejZThbl0AC-9ztyNWzwBcawik~UN00rzcMwq5jz7f6wJ9zxOrN4K~LWQuBFbORbMRjQrKFmL4LB9MTwJkUXwaG11koLVtyXGE4gmirNn0nNLsqd5Hrlkj7yusOC7qAa199KdXmfaJdHJDsQTc95ZVqntqaetg7vHSN0WmvuLNs9SFb3cIVOWbyV5gFcNrahymCLewWAIXv-opP2u0N~5UY2ggAS9IzmW6vIc2E7g4rbIP2vM0Gq1ky5y9YXY5IRD6KLtRD53-vqX~jL~VoKuOd1XivWfAPQNggw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+    background-size: cover;
+  }
+}/*# sourceMappingURL=style.css.map */
